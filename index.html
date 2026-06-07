@@ -23,23 +23,16 @@
       top: 0;
       z-index: 1000;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
-      padding: 16px 8%;
+      padding: 18px 8%;
       background: #e60012;
-      border-bottom: 1px solid rgba(255,255,255,0.2);
       box-shadow: 0 2px 12px rgba(0,0,0,0.12);
-    }
-
-    .logo img {
-      height: 42px;
-      width: auto;
-      display: block;
     }
 
     nav ul {
       display: flex;
-      gap: 26px;
+      gap: 30px;
       list-style: none;
       margin: 0;
       padding: 0;
@@ -65,28 +58,40 @@
     }
 
     header {
-      padding: 85px 10% 60px;
+      padding: 95px 10% 75px;
       text-align: center;
-      background: linear-gradient(135deg, #ffffff, #ffe5e8);
+      background: linear-gradient(135deg, #e60012 0%, #ff4d5f 100%);
+      color: white;
+    }
+
+    .application-tag {
+      color: rgba(255,255,255,0.9);
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      font-size: 14px;
     }
 
     header h1 {
       font-size: 56px;
       margin: 0;
-      color: #e60012;
+      color: white;
     }
 
     header h2 {
       font-size: 28px;
       font-weight: 500;
-      margin: 12px 0;
+      margin: 18px auto 0;
+      max-width: 900px;
+      color: white;
     }
 
     .tagline {
       font-size: 18px;
-      color: #4b5563;
-      max-width: 780px;
-      margin: 20px auto 0;
+      color: rgba(255,255,255,0.92);
+      max-width: 850px;
+      margin: 24px auto 0;
     }
 
     section {
@@ -203,7 +208,7 @@
     .highlight {
       background: #e60012;
       color: white;
-      padding: 65px 10%;
+      padding: 75px 10%;
       text-align: center;
       scroll-margin-top: 90px;
     }
@@ -239,11 +244,6 @@
     }
 
     @media (max-width: 900px) {
-      nav {
-        flex-direction: column;
-        gap: 12px;
-      }
-
       nav ul {
         flex-wrap: wrap;
         justify-content: center;
@@ -253,7 +253,7 @@
 
     @media (max-width: 800px) {
       header {
-        padding: 70px 8% 50px;
+        padding: 70px 8% 55px;
       }
 
       header h1 {
@@ -291,9 +291,6 @@
 <body>
 
   <nav>
-    <div class="logo">
-      <img src="https://1000logos.net/wp-content/uploads/2017/05/Colgate-Logo.png" alt="Colgate Logo">
-    </div>
     <ul>
       <li><a href="#intro">About Me</a></li>
       <li><a href="#profile">My Profile</a></li>
@@ -306,10 +303,11 @@
   </nav>
 
   <header>
-    <h1>Jan Kraege</h1>
-    <h2>Commercial Management Trainee Application</h2>
+    <p class="application-tag">Colgate-Palmolive Application</p>
+    <h1>Commercial Management Trainee</h1>
+    <h2>A global journey from Germany to Australia — and now back to Germany for the next challenge.</h2>
     <p class="tagline">
-      Business Management Graduate | International Experience | Commercial Thinking | Consumer Brand Enthusiast
+      Business Management Graduate • International Experience • Consumer Brands • Commercial Strategy
     </p>
   </header>
 
@@ -419,11 +417,19 @@
     <h3>Why Colgate-Palmolive?</h3>
     <div class="intro">
       <p>
-        Colgate-Palmolive stands out to me because it combines global brand strength with products that are part of people’s everyday lives. Working for a company whose brands are trusted by households around the world would allow me to contribute to meaningful consumer experiences while developing in a truly international business environment.
+        For me, Colgate-Palmolive represents more than a collection of global brands. It represents the ability to influence everyday consumer decisions on a global scale.
       </p>
 
       <p>
-        What particularly appeals to me is the combination of responsibility, development and global perspective. The opportunity to work on strategic projects, collaborate with experienced mentors and contribute to the growth of well-known consumer brands strongly matches what I am looking for at the beginning of my career.
+        Few companies combine strong brand portfolios, international collaboration and commercial excellence as successfully as Colgate-Palmolive.
+      </p>
+
+      <p>
+        What excites me most is the opportunity to work at the intersection of consumer understanding, marketing and commercial strategy.
+      </p>
+
+      <p>
+        The Commercial Management Trainee Program offers exposure to Brand Management, Sales and International Retail Marketing — exactly the combination that aligns with my background, interests and long-term career ambitions.
       </p>
 
       <p>
@@ -501,7 +507,13 @@
   <div class="highlight">
     <h3>My Motivation</h3>
     <p>
-      I want to start my career in an environment where I can combine analytical thinking, international collaboration and commercial responsibility. Colgate-Palmolive’s Commercial Management Trainee Program offers exactly this opportunity.
+      I moved across continents to challenge myself, stepped outside my comfort zone to pursue international opportunities and developed a strong passion for consumer-focused business.
+    </p>
+    <p>
+      Now I am looking for an environment where I can continue learning, take responsibility and contribute to the growth of global brands.
+    </p>
+    <p>
+      For me, Colgate-Palmolive is exactly that environment.
     </p>
   </div>
 
