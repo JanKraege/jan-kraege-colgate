@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jan Kraege | Colgate-Palmolive Application</title>
+
   <style>
     body {
       margin: 0;
@@ -37,38 +38,52 @@
       max-width: 780px;
       margin: 20px auto 0;
     }
-.intro-box {
-  max-width: 850px;
-  margin: 0 auto;
-  text-align: center;
-}
 
-.intro-box h3 {
-  color: #004b8d;
-  margin-bottom: 25px;
-  font-size: 38px;
-}
+    section {
+      padding: 90px 8%;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
 
-.intro-box p {
-  font-size: 18px;
-  color: #374151;
-  line-height: 1.9;
-  margin-bottom: 20px;
-}
+    h3 {
+      font-size: 42px;
+      text-align: center;
+      color: #004b8d;
+      margin-bottom: 50px;
+      margin-top: 0;
+    }
+
+    .intro-box,
+    .intro {
+      max-width: 850px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .intro-box p,
+    .intro p {
+      font-size: 18px;
+      color: #374151;
+      line-height: 1.9;
+      margin-bottom: 20px;
+    }
 
     .profile-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 22px;
+      grid-template-columns: repeat(2, minmax(300px, 550px));
+      justify-content: center;
+      gap: 26px;
     }
 
     .profile-box {
       padding: 45px;
-      min-height: 330px;
+      min-height: 320px;
       text-align: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.05);
     }
 
     .profile-box:nth-child(1),
@@ -118,20 +133,20 @@
 
     .timeline {
       border-left: 4px solid #004b8d;
-      padding-left: 28px;
+      padding-left: 35px;
       max-width: 850px;
-      margin: auto;
+      margin: 0 auto;
     }
 
     .timeline div {
-      margin-bottom: 28px;
+      margin-bottom: 32px;
       font-size: 17px;
     }
 
     .highlight {
       background: #004b8d;
       color: white;
-      padding: 70px 10%;
+      padding: 80px 10%;
       text-align: center;
     }
 
@@ -172,6 +187,14 @@
         font-size: 22px;
       }
 
+      h3 {
+        font-size: 32px;
+      }
+
+      section {
+        padding: 70px 6%;
+      }
+
       .profile-grid {
         grid-template-columns: 1fr;
       }
@@ -179,10 +202,6 @@
       .profile-box {
         min-height: auto;
         padding: 35px 25px;
-      }
-
-      h3 {
-        font-size: 30px;
       }
     }
   </style>
@@ -196,25 +215,25 @@
     <p class="tagline">
       Business Management Graduate | International Experience | Commercial Thinking | Consumer Brand Enthusiast
     </p>
-</header>
+  </header>
 
-<section>
-  <div class="intro-box">
-<h3>Dear Colgate Team,</h3>
+  <section>
+    <div class="intro-box">
+      <h3>Dear Colgate Team,</h3>
 
-<p>
-My name is Jan and I am currently completing my Master of Business Management at the University of Technology Sydney.
-</p>
+      <p>
+        My name is Jan and I am currently completing my Master of Business Management at the University of Technology Sydney.
+      </p>
 
-<p>
-What started as an exchange semester in Australia turned into several years of studying, working and growing abroad. Along the way, I gained experience at BRITA Australia, completed my Master's degree and developed a strong interest in commercial strategy, consumer brands and international business.
-</p>
+      <p>
+        What started as an exchange semester in Australia turned into several years of studying, working and growing abroad. Along the way, I gained experience at BRITA Australia, completed my Master's degree and developed a strong interest in commercial strategy, consumer brands and international business.
+      </p>
 
-<p>
-Now, after returning to Germany, I am looking for the next challenge to start my professional career. The Commercial Management Trainee Program at Colgate-Palmolive immediately stood out to me because it combines exactly the areas that excite me most: commercial thinking, consumer-focused decision making and international collaboration.
-</p>
-  </div>
-</section>
+      <p>
+        Now, after returning to Germany, I am looking for the next challenge to start my professional career. The Commercial Management Trainee Program at Colgate-Palmolive immediately stood out to me because it combines exactly the areas that excite me most: commercial thinking, consumer-focused decision making and international collaboration.
+      </p>
+    </div>
+  </section>
 
   <section>
     <h3>My Profile in 60 Seconds</h3>
@@ -223,57 +242,79 @@ Now, after returning to Germany, I am looking for the next challenge to start my
       <div class="profile-box">
         <div class="emoji">💼</div>
         <h4>Commercial Thinking</h4>
-        <p>
-          Strong interest in consumer brands, commercial strategy and understanding how businesses grow.
-        </p>
-        <p>
-          During my Master’s in Sydney, I focused on global strategy, supply chains and the commercial decisions that drive long-term business success.
-        </p>
-        <p>
-          What excites me most is connecting strategic thinking with practical execution to create value for customers and brands.
-        </p>
+        <p>Strong interest in consumer brands, commercial strategy and understanding how businesses grow.</p>
+        <p>During my Master’s in Sydney, I focused on global strategy, supply chains and the commercial decisions that drive long-term business success.</p>
+        <p>What excites me most is connecting strategic thinking with practical execution to create value for customers and brands.</p>
       </div>
 
       <div class="profile-box">
         <div class="emoji">📊</div>
         <h4>Analytical & Data-Driven</h4>
-        <p>
-          Experience in market analysis, customer research and turning complex information into clear recommendations.
-        </p>
-        <p>
-          At BRITA Australia, I analysed customer behaviour and evaluated the potential of a subscription model through market and consumer research.
-        </p>
-        <p>
-          I enjoy using data and insights to support better business decisions.
-        </p>
+        <p>Experience in market analysis, customer research and turning complex information into clear recommendations.</p>
+        <p>At BRITA Australia, I analysed customer behaviour and evaluated the potential of a subscription model through market and consumer research.</p>
+        <p>I enjoy using data and insights to support better business decisions.</p>
       </div>
 
       <div class="profile-box">
         <div class="emoji">🤝</div>
         <h4>Marketing & Consumer Understanding</h4>
-        <p>
-          Strong interest in understanding consumer behaviour, brand positioning and customer needs.
-        </p>
-        <p>
-          Through my academic background and practical experience, I developed an appreciation for how successful brands create meaningful relationships with consumers.
-        </p>
-        <p>
-          This curiosity is one reason why Colgate-Palmolive’s Commercial Management Program strongly appeals to me.
-        </p>
+        <p>Strong interest in understanding consumer behaviour, brand positioning and customer needs.</p>
+        <p>Through my academic background and practical experience, I developed an appreciation for how successful brands create meaningful relationships with consumers.</p>
+        <p>This curiosity is one reason why Colgate-Palmolive’s Commercial Management Program strongly appeals to me.</p>
       </div>
 
       <div class="profile-box">
         <div class="emoji">🌍</div>
         <h4>International Experience</h4>
-        <p>
-          Moving from Germany to Australia taught me to adapt quickly and perform in unfamiliar environments.
-        </p>
-        <p>
-          Studying and working internationally strengthened my communication skills, curiosity and ability to collaborate across cultures.
-        </p>
-        <p>
-          It also reinforced my ambition to build an international career.
-        </p>
+        <p>Moving from Germany to Australia taught me to adapt quickly and perform in unfamiliar environments.</p>
+        <p>Studying and working internationally strengthened my communication skills, curiosity and ability to collaborate across cultures.</p>
+        <p>It also reinforced my ambition to build an international career.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h3>My International Journey</h3>
+
+    <div class="timeline">
+      <div>
+        <strong>🇩🇪 Germany — Bachelor Studies (2020–2024)</strong><br />
+        I started my academic journey at Hochschule Fresenius in Wiesbaden, studying Business Administration with a focus on Marketing, International Management and Organisational Psychology.
+      </div>
+
+      <div>
+        <strong>🇦🇺 Australia — Exchange Semester at UTS Sydney (2022)</strong><br />
+        My first international experience abroad. Living and studying in Sydney sparked my ambition to pursue an internationally oriented career.
+      </div>
+
+      <div>
+        <strong>🇦🇺 Australia — BRITA Australia (Nov 2022 – Apr 2023)</strong><br />
+        Worked as a Sales & Marketing Assistant, conducting market analysis, customer research and strategic recommendations for commercial decision-making.
+      </div>
+
+      <div>
+        <strong>🇩🇪 Germany — Bachelor Graduation (Jul 2024)</strong><br />
+        Completed my Bachelor's degree and decided to take the next step towards an international career.
+      </div>
+
+      <div>
+        <strong>🇦🇺 Australia — Master's Degree at UTS Sydney (Feb 2025 – Jun 2026)</strong><br />
+        Returned to Sydney to pursue a Master's degree focused on Global Strategic Management and Global Supply Chain Management.
+      </div>
+
+      <div>
+        <strong>🇦🇺 Australia — Tokyo Headspa Sydney (Jan 2026 – May 2026)</strong><br />
+        Supported marketing initiatives, competitive benchmarking and business development projects in a fast-growing service business.
+      </div>
+
+      <div>
+        <strong>🇩🇪 Germany — Back Home, Looking Forward (Jun 2026)</strong><br />
+        Returning to Germany after several years of studying and working in Australia, bringing international experience and a global perspective.
+      </div>
+
+      <div>
+        <strong>🌍 Next Step: Colgate-Palmolive?</strong><br />
+        The Commercial Management Trainee Program combines exactly the areas that excite me most: consumer brands, commercial strategy, international collaboration and continuous development.
       </div>
     </div>
   </section>
@@ -282,83 +323,30 @@ Now, after returning to Germany, I am looking for the next challenge to start my
     <h3>Why Colgate-Palmolive?</h3>
     <div class="intro">
       <p>
-        Colgate-Palmolive combines everything that excites me about a future career:
-        global consumer brands, international collaboration, commercial thinking and the opportunity to create meaningful impact in people’s everyday lives.
+        Colgate-Palmolive combines everything that excites me about a future career: global consumer brands, international collaboration, commercial thinking and the opportunity to create meaningful impact in people’s everyday lives.
       </p>
       <p>
         The Commercial Management Trainee Program particularly appeals to me because it connects Brand Management, Sales and International Retail Marketing. This cross-functional perspective is exactly the kind of environment in which I want to grow professionally and personally.
       </p>
     </div>
   </section>
-
-  <section>
-  <h3>My international Journey</h3>
-
-  <div class="timeline">
-
-<div>
-  <strong>🇩🇪 Germany — Bachelor Studies (2020–2024)</strong><br />
-  I started my academic journey at Hochschule Fresenius in Wiesbaden, studying Business Administration with a focus on Marketing, International Management and Organisational Psychology.
-</div>
-
-<div>
-  <strong>🇦🇺 2022 | Exchange Semester at UTS Sydney</strong><br />
-  My first international experience abroad. Living and studying in Sydney sparked my ambition to pursue an internationally oriented career.
-</div>
-
-<div>
-  <strong>🇦🇺 Nov 2022 – Apr 2023 | BRITA Australia</strong><br />
-  Worked as a Sales & Marketing Assistant, conducting market analysis, customer research and strategic recommendations for commercial decision-making.
-</div>
-
-<div>
-  <strong>🇩🇪 Jul 2024 | Bachelor Graduation</strong><br />
-  Completed my Bachelor's degree and decided to take the next step towards an international career.
-</div>
-
-<div>
-  <strong>🇦🇺 Feb 2025 – Jun 2026 | Master of Business Management</strong><br />
-  Returned to Sydney to pursue a Master's degree focused on Global Strategic Management and Global Supply Chain Management.
-</div>
-
-<div>
-  <strong>🇦🇺 Jan 2026 – May 2026 | Tokyo Headspa Sydney</strong><br />
-  Supported marketing initiatives, competitive benchmarking and business development projects in a fast-growing service business.
-</div>
-
-<div>
-  <strong>🇩🇪 Jun 2026 | Back Home</strong><br />
-  Returning to Germany after several years of studying and working in Australia, bringing international experience and a global perspective.
-</div>
-
-<div>
-  <strong>🌍 2026 | Next Step: Colgate-Palmolive?</strong><br />
-  The Commercial Management Trainee Program combines exactly the areas that excite me most: consumer brands, commercial strategy, international collaboration and continuous development.
-</div>
-</section>
-
+  
   <section>
     <h3>Why Commercial Management?</h3>
     <div class="cards">
       <div class="card">
         <h4>Brand Management</h4>
-        <p>
-          I am fascinated by how strong brands build trust, shape consumer behaviour and create long-term value across different markets.
-        </p>
+        <p>I am fascinated by how strong brands build trust, shape consumer behaviour and create long-term value across different markets.</p>
       </div>
 
       <div class="card">
         <h4>Sales</h4>
-        <p>
-          Understanding retail, negotiation and customer relationships is essential to turning strategy into measurable commercial impact.
-        </p>
+        <p>Understanding retail, negotiation and customer relationships is essential to turning strategy into measurable commercial impact.</p>
       </div>
 
       <div class="card">
         <h4>International Retail Marketing</h4>
-        <p>
-          My international experience has shown me how important it is to adapt strategies to local markets while keeping a global brand perspective.
-        </p>
+        <p>My international experience has shown me how important it is to adapt strategies to local markets while keeping a global brand perspective.</p>
       </div>
     </div>
   </section>
@@ -368,23 +356,17 @@ Now, after returning to Germany, I am looking for the next challenge to start my
     <div class="cards">
       <div class="card">
         <h4>Retail Media</h4>
-        <p>
-          Retail media is changing how brands connect marketing investment directly to shopper behaviour and purchase decisions.
-        </p>
+        <p>Retail media is changing how brands connect marketing investment directly to shopper behaviour and purchase decisions.</p>
       </div>
 
       <div class="card">
         <h4>Sustainability</h4>
-        <p>
-          Consumers increasingly expect brands to combine product quality with responsible sourcing, packaging and long-term environmental impact.
-        </p>
+        <p>Consumers increasingly expect brands to combine product quality with responsible sourcing, packaging and long-term environmental impact.</p>
       </div>
 
       <div class="card">
         <h4>Social Commerce</h4>
-        <p>
-          The boundary between inspiration, content and purchase is becoming smaller, especially among younger consumer groups.
-        </p>
+        <p>The boundary between inspiration, content and purchase is becoming smaller, especially among younger consumer groups.</p>
       </div>
     </div>
   </section>
@@ -398,9 +380,7 @@ Now, after returning to Germany, I am looking for the next challenge to start my
 
   <footer>
     <p><strong>Jan Kraege</strong></p>
-    <p>
-      Email: <a href="mailto:jan.kraege@icloud.com">jan.kraege@icloud.com</a>
-    </p>
+    <p>Email: <a href="mailto:jan.kraege@icloud.com">jan.kraege@icloud.com</a></p>
     <p>
       LinkedIn:
       <a href="https://www.linkedin.com/in/jan-kraege" target="_blank">
