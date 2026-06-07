@@ -13,7 +13,7 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f4f7fb;
+      background: #fff7f7;
       color: #1f2937;
       line-height: 1.6;
     }
@@ -25,16 +25,16 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 18px 8%;
-      background: white;
-      border-bottom: 1px solid #e5e7eb;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+      padding: 16px 8%;
+      background: #e60012;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.12);
     }
 
-    .logo {
-      font-size: 22px;
-      font-weight: 800;
-      color: #004b8d;
+    .logo img {
+      height: 42px;
+      width: auto;
+      display: block;
     }
 
     nav ul {
@@ -48,18 +48,18 @@
 
     nav a {
       text-decoration: none;
-      color: #111827;
+      color: white;
       font-weight: 700;
       font-size: 14px;
     }
 
     nav a:hover {
-      color: #004b8d;
+      opacity: 0.8;
     }
 
     .nav-button {
-      background: #004b8d;
-      color: white !important;
+      background: white;
+      color: #e60012 !important;
       padding: 10px 18px;
       border-radius: 999px;
     }
@@ -67,13 +67,13 @@
     header {
       padding: 85px 10% 60px;
       text-align: center;
-      background: linear-gradient(135deg, #ffffff, #eaf3ff);
+      background: linear-gradient(135deg, #ffffff, #ffe5e8);
     }
 
     header h1 {
       font-size: 56px;
       margin: 0;
-      color: #004b8d;
+      color: #e60012;
     }
 
     header h2 {
@@ -99,7 +99,7 @@
     h3 {
       font-size: 42px;
       text-align: center;
-      color: #004b8d;
+      color: #e60012;
       margin-bottom: 30px;
       margin-top: 0;
     }
@@ -144,7 +144,7 @@
 
     .profile-box:nth-child(2),
     .profile-box:nth-child(3) {
-      background: #dff0ff;
+      background: #ffe5e8;
     }
 
     .profile-box h4 {
@@ -184,12 +184,12 @@
 
     .card h4 {
       margin-top: 0;
-      color: #004b8d;
+      color: #e60012;
       font-size: 21px;
     }
 
     .timeline {
-      border-left: 4px solid #004b8d;
+      border-left: 4px solid #e60012;
       padding-left: 35px;
       max-width: 850px;
       margin: 0 auto;
@@ -201,7 +201,7 @@
     }
 
     .highlight {
-      background: #004b8d;
+      background: #e60012;
       color: white;
       padding: 65px 10%;
       text-align: center;
@@ -229,13 +229,13 @@
     }
 
     a {
-      color: #0072ce;
+      color: #e60012;
       text-decoration: none;
       font-weight: bold;
     }
 
     footer a {
-      color: #93c5fd;
+      color: #fecaca;
     }
 
     @media (max-width: 900px) {
@@ -291,7 +291,9 @@
 <body>
 
   <nav>
-    <div class="logo">Jan Kraege</div>
+    <div class="logo">
+      <img src="https://1000logos.net/wp-content/uploads/2017/05/Colgate-Logo.png" alt="Colgate Logo">
+    </div>
     <ul>
       <li><a href="#intro">About Me</a></li>
       <li><a href="#profile">My Profile</a></li>
@@ -299,7 +301,7 @@
       <li><a href="#colgate">Why Colgate</a></li>
       <li><a href="#program">Program</a></li>
       <li><a href="#trends">Ideas</a></li>
-      <li><a class="nav-button" href="#contact">Contact</a></li>
+      <li><a class="nav-button" href="#contact">Let’s Connect</a></li>
     </ul>
   </nav>
 
